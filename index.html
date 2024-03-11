@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Money Converter</title>
+</head>
+<body>
+  <main>
+    <h1>Money Converter</h1>
+    <label for="amount">Enter amount:</label>
+    <input type="number" id="amount" step="0.01" placeholder="Enter amount here" required>
+    <br><br>
+    <label for="currency">Convert from:</label>
+    <select id="currency">
+        <option value="USD">USD</option>
+        <option value="UZS">UZS</option>
+        <option value="EUR">EUR</option>
+        <option value="JPY">JPY</option>
+        <option value="PLN">PLN</option>
+        <option value="KWD">KWD</option>
+        <option value="BHD">BHD</option>
+        <option value="JOD">JOD</option>
+        <option value="CHF">CHF</option>
+    </select>
+    <label for="convertTo">to:</label>
+    <select id="convertTo">
+        <option value="UZS">UZS</option>
+        <option value="RUB">RUB</option>
+        <option value="CNY">CNY</option>
+        <option value="GBP">GBP</option>
+    </select>
+    <br><br>
+    <button onclick="convert()">Convert</button>
+    <p id="result"></p>
+
+    <marquee behavior="" direction="">Created by &copy; Sardor & Abubakrsiddik</marquee>
+  </main>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html> 
